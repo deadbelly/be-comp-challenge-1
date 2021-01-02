@@ -14,17 +14,39 @@ body {
 }
 
 main {
-  border: solid;
-  border-color: black;
   height: 82%;
   width: 100%;
 }
 
 .usercards {
-  border: solid;
-  border-color: black;
   display: grid;
   align-self: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   height: 87%;
   width: 100%;
+}
+
+.usercard {
+  border: solid;
+  border-color: black;
+  margin: 1%;
+  min-width: 200px;
+}
+
+@media screen and (max-width: 740px) {
+  .usercards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .usercards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .usercards {
+    grid-template-columns: 1fr;
+  }
 }
