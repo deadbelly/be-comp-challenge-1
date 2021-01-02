@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  border: solid;
+  border-color: black;
+  display: flex;
+  flex-direction: row;
+  height: 18%;
+  width: 100%;
+}
+
+main {
+  border: solid;
+  border-color: black;
+  height: 82%;
+  width: 100%;
+}
+
+.usercards {
+  border: solid;
+  border-color: black;
+  display: grid;
+  align-self: center;
+  height: 87%;
+  width: 100%;
+}
