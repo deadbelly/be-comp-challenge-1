@@ -6,20 +6,27 @@ const loadCardHTML = () => {for (var i = 1; i < 9; i++) {
         <button type="button" class="share-arrow">
             <img class="arrow-icon" src="./assets/arrow.png" alt="share arrow">
         </button>
-        <div class="view-count">
+        <div class="cluster view-count">
           <p>VIEWS</p>
           <h2>02</h2>
         </div>
       </div>
       <div class="user-info">
-      <h3>Recipient's Namehere</h3>
-      <p>Monday 01/23/16 10:22am</p>
+      <div class="cluster">
+        <h3>Recipient's Namehere</h3>
+        <p>Monday 01/23/16 10:22am</p>
+      </div>
       <div class="link-box">
         <p>http://2win.2stage.com/p/recipients_namehere</p>
       </div>
-      <h3>Name of Playlist</h3>
-      <p>ATTACHMENTS</p>
-      <h2>04</h2>
+      <div class="cluster">
+        <p>Playlist</p>
+        <h3>Name of Playlist</h3>
+      </div>
+      <div class="cluster">
+        <p>ATTACHMENTS</p>
+        <h2>04</h2>
+      </div>
       </div>
     </article>`
 }}
