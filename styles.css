@@ -1,9 +1,10 @@
+/* GENERAL RULES */
 body {
   color: rgb(79,79,79);
   display: flex;
   flex-direction: column;
-  height: 100vh;
   font-family: "Lato", sans-serif;
+  height: 100vh;
 }
 
 p {
@@ -22,6 +23,12 @@ h3 {
   font-size: 3vmin;
 }
 
+.blue {
+  color: rgb(50,183,253);
+}
+
+/* NAVBAR */
+
 .navbar {
   background-color: rgb(43,43,43);
   color: white;
@@ -33,11 +40,11 @@ h3 {
 }
 
 .nav-button {
-  font-size: 2vmin;
-  color: rgb(153,153,153);
-  margin-top: 20%;
   background-color: inherit;
   border: none;
+  color: rgb(153,153,153);
+  font-size: 2vmin;
+  margin-top: 20%;
 }
 
 
@@ -50,11 +57,13 @@ h3 {
   width: 80%;
 }
 
-.navbar__left {
-  text-align: center;
+.navbar__right {
   margin-top: 1.5%;
   margin-right: 2%;
+  text-align: center;
 }
+
+/* MAIN AREA */
 
 main {
   background-color: rgb(239,239,239);
@@ -63,8 +72,8 @@ main {
 }
 
 .usercards {
-  display: grid;
   align-self: center;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   height: 87%;
   width: 100%;
@@ -111,25 +120,23 @@ main {
 .link-box {
   align-self: center;
   background-color: grey;
-  text-align: center;
   margin-left: 1%;
   margin-right: 1%;
+  text-align: center;
   overflow-wrap: break-word;
   padding: 1%;
 }
 
 .view-count {
-  text-align: center;
   margin: 2%;
+  text-align: center;
 }
 
-.cluster {
+.content-cluster {
   line-height: 0.1vmin;
 }
 
-.blue {
-  color: rgb(50,183,253);
-}
+/* BREAKPOINTS */
 
 @media screen and (max-width: 740px) {
   .usercards {
@@ -151,10 +158,6 @@ main {
   .navbar {
     padding-top: 40px;
     flex-direction: column-reverse;
-  }
-
-  .navbar__right {
-
   }
 }
 
