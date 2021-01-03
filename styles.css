@@ -23,10 +23,32 @@ h3 {
 
 .navbar {
   background-color: rgb(43,43,43);
+  color: white;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   height: 18%;
   width: 100%;
+}
+
+.nav-button {
+  color: white;
+  margin-top: 20%;
+  background-color: inherit;
+  border: none;
+}
+
+.navbut-icon {
+  height: 25px;
+}
+
+.user-select {
+  width: 100%;
+}
+
+.navbar__left {
+  margin-top: 1.5%;
+  margin-right: 2%;
 }
 
 main {
@@ -72,6 +94,7 @@ main {
   background-color: white;
   border-radius: 50%;
   height: 40%;
+  margin: 2%;
   width: 25%;
 }
 
@@ -115,4 +138,10 @@ main {
   .usercards {
     grid-template-columns: 1fr;
   }
+}
+
+@media screen and (min-width: 550px) and (max-width: 1200px) {
+.link-box {
+  width: 90%;
+}
 }
