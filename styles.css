@@ -1,4 +1,5 @@
 body {
+  color: rgb(79,79,79);
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -23,10 +24,36 @@ h3 {
 
 .navbar {
   background-color: rgb(43,43,43);
+  color: white;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   height: 18%;
   width: 100%;
+}
+
+.nav-button {
+  font-size: 2vmin;
+  color: rgb(153,153,153);
+  margin-top: 20%;
+  background-color: inherit;
+  border: none;
+}
+
+
+.navbut-icon {
+  height: 13px;
+}
+
+.user-select {
+  background-color: inherit;
+  width: 80%;
+}
+
+.navbar__left {
+  text-align: center;
+  margin-top: 1.5%;
+  margin-right: 2%;
 }
 
 main {
@@ -72,6 +99,7 @@ main {
   background-color: white;
   border-radius: 50%;
   height: 40%;
+  margin: 2%;
   width: 25%;
 }
 
@@ -99,6 +127,10 @@ main {
   line-height: 0.1vmin;
 }
 
+.blue {
+  color: rgb(50,183,253);
+}
+
 @media screen and (max-width: 740px) {
   .usercards {
     grid-template-columns: 1fr 1fr 1fr;
@@ -114,5 +146,20 @@ main {
 @media screen and (max-width: 400px) {
   .usercards {
     grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    padding-top: 40px;
+    flex-direction: column-reverse;
+  }
+
+  .navbar__right {
+
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 1200px) {
+  .link-box {
+    width: 90%;
   }
 }

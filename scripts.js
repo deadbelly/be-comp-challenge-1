@@ -25,7 +25,7 @@ const loadCardHTML = () => {for (var i = 1; i < 9; i++) {
       </div>
       <div class="cluster">
         <p>ATTACHMENTS</p>
-        <h2>04</h2>
+        <h2 class="blue">04</h2>
       </div>
       </div>
     </article>`
